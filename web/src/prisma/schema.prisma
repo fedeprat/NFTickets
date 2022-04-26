@@ -1,0 +1,22 @@
+generator client {
+      provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl    = env("SHADOW_DATABASE_URL")
+}
+
+model User {
+      walletAddress String  @id @unique
+      email         String  @unique
+      name          String? @default("Unknown")
+      image         String? @default("https://i1.sndcdn.com/avatars-000437232558-yuo0mv-t500x500.jpg")
+}
+
+model Contract {
+      address String @id @unique
+      name    String
+      symbol  String
+}

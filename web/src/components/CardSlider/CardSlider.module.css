@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0px 0;
+  background: #dbd0bc;
+  overflow-y: hidden;
+}
+
+.box {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x proximity;
+  height: 50vh;
+  gap: 1rem;
+}
+
+.bot {
+  font-size: 2rem;
+  padding: 1rem;
+  transition-duration: 300ms;
+}
+
+/* .bot:hover { 
+ color: rgb(255, 44, 160);
+  background-color: rgba(0, 0, 0, 0.075); 
+} */
