@@ -305,7 +305,7 @@ export default function Help() {
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
               title="NFTickets, final project"
-            ></iframe>
+            />
           </AspectRatio>
         </Stack>
         <Stack
@@ -339,7 +339,7 @@ export default function Help() {
             width="fit-content"
             marginTop="60px"
           >
-            We use ropsten's test network. So you should choose that net in your metamask, if you don't see them set the test networks to visible first. This is how you do it
+            We use ropstens test network. So you should choose that net in your metamask, if you do not see them set the test networks to visible first. This is how you do it
           </Text>
           <Stack
           alignItems="center"
